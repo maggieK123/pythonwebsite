@@ -5,4 +5,6 @@ Tech used: Python, HTML, Javascript, CSS
 
 Used Flask in Python to create and connect my database to my website
 
-Author: Margaret Knoebel
+Author: Margaret Knoebel 
+
+Contact: mag.knoebel@gmail.com
