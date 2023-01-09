@@ -1,0 +1,155 @@
+
+body {
+    background: url(/Users/maggie/Desktop/pythonwebsite/website/static/images/sunset.png) no-repeat center center fixed; 
+    background-size: auto;
+    background-color: #cccccc;
+    
+   }
+
+   h1 {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 500%;
+  }
+
+  .button{
+    background-color: rgb(254, 241, 193);
+    border: 2px solid black;
+    border-radius: 30px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    touch-action: manipulation;
+  
+  }
+
+  .one{
+    line-height: 2.8;
+  }
+
+  .button:hover {
+   
+    background-color: #fff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .button1 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+   
+  }
+
+
+  .button2 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  .button3 {
+    line-height: 25px;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+  
+  /* Modal Content/Box */
+.modal-content {
+  font: Cursive;
+  background-color: #feedd3;
+  margin: 15% auto; /* 15% from the top and centered */
+  
+  padding: 20px;
+  border: 10px solid rgb(176, 169, 150);
+  min-height: 200px;
+  width: 300px; /* Could be more or less, depending on screen size */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.7s
+}
+
+.modal-content2 {
+  font: Cursive;
+  background-color: #ebdfcd;
+  margin: 15% auto; /* 15% from the top and centered */
+  
+  padding: 20px;
+  border: 10px solid #888;
+  min-height: 200px;
+  width: 300px; /* Could be more or less, depending on screen size */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.7s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img{
+  height: 200px;
+  width: 300px;
+  object-fit: scale-down;
+}

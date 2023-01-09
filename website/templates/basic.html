@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/Users/maggie/Desktop/pythonwebsite/website/static/style/style.css">
+    
+    <title>home</title>
+   
+  </head>
+  <body>
+    <h1> My Home Page</h1>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+    <div class="alert alert-warning">
+      <strong>Warning!</strong> {{message}}
+    </div>
+    </div>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}
+  <button class="button button1" id = "log">Login</button>
+  <button class="button button2" id="logs">Register</button>
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" back>
+      <span class="close">&times;</span>
+      <h2> Login </h2>
+      <div class="one">
+        <img src="/Users/maggie/Desktop/pythonwebsite/website/static/images/avocado.jpg" alt="alternatetext" >
+        <form method="POST">
+          <div>
+            <label for="Name">Username:</label>
+            <input type="text" id="Name" name="name1" placeholder="username">
+          </div>
+          <div>
+            <label for="Name">Password:</label>
+            <input type="password" id="pass" name="password1" placeholder="password">
+          </div>
+          <div>
+            <input type="submit" value="Submit" class="button button3" id="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div id="myModal2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content2" back>
+      <span class="close2">&times;</span>
+      <h2> Create an account </h2>
+      <div class="one">
+        <img src="/Users/maggie/Desktop/pythonwebsite/website/static/images/duck.jpg" alt="alternatetext" >
+        <form method="POST">
+          <div>
+            <label for="Name">Username:</label>
+            <input type="text" id="Name" name="name2" placeholder="username">
+          </div>
+          <div>
+            <label for="Name">Password:</label>
+            <input type="password" id="pass" name="password2" placeholder="password">
+          </div>
+          <div>
+            <input type="submit" value="Register" class="button button3" id="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/Users/maggie/Desktop/pythonwebsite/website/static/external.js"></script>
+  
+  </body>
+</html>
