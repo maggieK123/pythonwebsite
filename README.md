@@ -1,5 +1,5 @@
 # Project: pythonwebsite
-This is a website project I am working on. It creates accounts and logs users in.
+This is a website project I am working on. Currently, it has user registration and authentication.
 # How it is made
 Tech used: Python, HTML, Javascript, CSS
 
